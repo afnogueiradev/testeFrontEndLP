@@ -1,6 +1,32 @@
 @font-face {
     font-family: 'Montserat';
-    src: url('fons/Montserrat-Bold.ttf');
+    src: url('../font/Montserrat-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
+h1 {
+    font-size: 0;
+}
+header {
+    background-color: #363636;
+    color: #fff;
+}
+header section {
+    text-align: center;
+}
+header .row {
+    display: inline-flex;
+    text-align: center;
+}
+header h1, header h2 {
+    height: 50px;
+}
+header h2 {
+    font-size: 22px;
+    top: 13px;
+    position: relative;
+}
+header img {
+    height: 50px;
+}
+
