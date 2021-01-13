@@ -71,6 +71,9 @@ section.carousel {
     background: #363636;
     height: 1050px;
 }
+.responsive {
+    right: 20px;
+}
 .responsive li {
     margin-top: 299px;
 }
@@ -122,6 +125,77 @@ section.carousel {
     display: block;
 }
 .formulario {
-    height: 625px;
+    height: 775px;
     background-image: linear-gradient(#7DEDE2, #58B790);
+}
+.form {
+    width: 1082px;
+    height: 872px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #0000004D;
+    opacity: 1;
+    position: relative;
+    border-radius: 5px;
+    top: -50px;
+    text-align: center;
+    padding: 130px;
+}
+.form h2 {
+    color: #63C7A9;
+    font-family: 'Montserat';
+}
+.form-contato {
+    text-align: center;
+    width: 588px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.form-contato .input {
+    float: left;
+}
+.form-contato input {border-radius: 0;width: 249px;height: 48px;padding: 10px;}
+
+.form p {
+    display: block;
+    padding: 24px;
+    text-align: left;
+    font: normal normal normal 20px/21px 'OpenSans';
+}
+.form-contato textarea#mensagem {
+    width: 100%;
+    margin-top: 30px;
+}
+span.btn-enviar {
+    text-align: center;
+    background: #63C7A9;
+    width: 249px;
+    height: 48px;
+    color: #ffff;
+    font-size: 18px;
+    padding: 15px;
+    display: block;
+}
+footer {
+    height: 410px;
+    background: #363636;
+}
+
+span.btn-topo {
+    width: 107px;
+    height: 107px;
+    background: #ffff;
+    display: block;
+    border-radius: 100%;
+    position: fixed;
+    right: 30px;
+    top: 830px;
+}
+span.btn-topo:before {
+    font-family: 'FontAwesome';
+    content: '\f106';
+    color: #363636;
+    font-size: 80px;
+    margin: 30px;
+    margin-top: -10px;
+    display: block;
 }
