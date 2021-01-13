@@ -66,6 +66,7 @@ header img {
     margin: 0 auto;
     top: 45px;
     position: relative;
+    z-index: 1;
 }
 section.carousel {
     background: #363636;
@@ -140,6 +141,9 @@ section.carousel {
     text-align: center;
     padding: 130px;
 }
+.form .col-md-12 {
+    z-index: 1;
+}
 .form h2 {
     color: #63C7A9;
     font-family: 'Montserat';
@@ -152,6 +156,7 @@ section.carousel {
 }
 .form-contato .input {
     float: left;
+    z-index: 2;
 }
 .form-contato input {border-radius: 0;width: 249px;height: 48px;padding: 10px;}
 
@@ -172,8 +177,9 @@ span.btn-enviar {
     height: 48px;
     color: #ffff;
     font-size: 18px;
-    padding: 15px;
+    padding: 8px;
     display: block;
+    cursor: pointer;
 }
 footer {
     height: 410px;
@@ -189,6 +195,7 @@ span.btn-topo {
     position: fixed;
     right: 30px;
     top: 830px;
+    display: none;
 }
 span.btn-topo:before {
     font-family: 'FontAwesome';
@@ -198,4 +205,42 @@ span.btn-topo:before {
     margin: 30px;
     margin-top: -10px;
     display: block;
+}
+.error {
+    color: red;
+    display: none;
+}
+.sucess-msg {
+    display: none;
+    color: green;
+}
+@media only screen and (max-width: 600px) {
+    .card-content {
+        width: 100%;
+        height: 780px;
+    }
+    .card-content img {
+        width: 100%;
+        height: 520px;
+    }
+    .card-content span {
+        padding: 30px;
+    }
+    section.conteudo {
+        height: 780px;
+    }
+    .form {
+        width: 100%;
+        padding: 16px;
+    }
+    .form-contato .input {
+        float: none;
+        margin: 10px 0;
+    }
+    span.btn-topo {
+        top: 730px;
+    }
+    .slick-prev, .slick-next {
+        display: none!important;
+    }
 }
